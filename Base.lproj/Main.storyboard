@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Futura.ttc">
+            <string>Futura-MediumItalic</string>
+        </array>
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-BoldItalic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magic_8" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwA-kc-2sg">
+                                <rect key="frame" x="93" y="187" width="187" height="74"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Find My Fortune!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonWasClicked:" destination="BYZ-38-t0r" eventType="touchDown" id="46y-Ct-bsO"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8ball.jpeg" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YgR-Op-c8P">
+                                <rect key="frame" x="0.0" y="313" width="375" height="354"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="R2k-Hl-Gfp">
+                                <rect key="frame" x="94" y="482" width="187" height="92"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magic 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbG-eq-D6V">
+                                <rect key="frame" x="-2" y="44" width="379" height="52.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SbG-eq-D6V" secondAttribute="height" multiplier="375:52" id="gTp-I9-K6o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask Magic 8 a question, then press the button!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hu-5w-yl3">
+                                <rect key="frame" x="9.5" y="97" width="356.5" height="105.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9hu-5w-yl3" secondAttribute="height" multiplier="71:21" id="8mP-xG-rbr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SbG-eq-D6V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2do-ae-CFr"/>
+                            <constraint firstItem="YgR-Op-c8P" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DtH-uo-1Hq"/>
+                            <constraint firstItem="SbG-eq-D6V" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="EJX-vy-9dg"/>
+                            <constraint firstItem="9hu-5w-yl3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="9.5" id="Fek-Fi-R45"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YgR-Op-c8P" secondAttribute="bottom" id="HKm-GX-Kse"/>
+                            <constraint firstItem="YgR-Op-c8P" firstAttribute="top" secondItem="9hu-5w-yl3" secondAttribute="bottom" constant="110.5" id="aQf-LE-wIj"/>
+                            <constraint firstItem="9hu-5w-yl3" firstAttribute="top" secondItem="SbG-eq-D6V" secondAttribute="bottom" constant="0.5" id="b3J-c8-iUy"/>
+                            <constraint firstAttribute="trailing" secondItem="YgR-Op-c8P" secondAttribute="trailing" id="hDq-AV-xmw"/>
+                            <constraint firstAttribute="trailing" secondItem="9hu-5w-yl3" secondAttribute="trailing" constant="9" id="s59-g6-bJS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fortuneButton" destination="MwA-kc-2sg" id="Pm3-JP-YdK"/>
+                        <outlet property="fortuneView" destination="R2k-Hl-Gfp" id="gBl-pa-cRK"/>
+                        <outlet property="magic8" destination="SbG-eq-D6V" id="tfx-La-wi6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="8ball.jpeg" width="293" height="172"/>
+    </resources>
+</document>
